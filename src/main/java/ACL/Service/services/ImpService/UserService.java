@@ -24,19 +24,5 @@ public class UserService implements IUserService {
         return userRepository.save(user);
     }
 
-    public void initRoleAndUser(){
-        Role allRoles = (Role) roleRepository.findAll();
-        User adminUser = new User();
-        adminUser.setUserName("Nobin922");
-        adminUser.setUserFirstName("Arif");
-        adminUser.setUserLastName("Shakil");
-        adminUser.setUserPassword("123456");
-        Set<Role> adminRoles = new HashSet<>();
-        adminRoles.add(allRoles);
-        userRepository.save(adminUser);
 
-
-
-
-    }
 }
