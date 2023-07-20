@@ -1,10 +1,10 @@
 package ACL.Service.exceptions;
 
+import ACL.Service.payloads.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import user.service.payload.ApiResponse;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
